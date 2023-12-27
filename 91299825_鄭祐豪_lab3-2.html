@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <title>ex-3-2</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            text-align: center;
+        }
+
+        img.pokemon {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display-1"></div>
+    <hr>
+    <div id="display-2"></div>
+    <hr>
+    <div id="display-3"></div>
+    <hr>
+    <div id="display-4"></div>
+
+    <script>
+        let pokemon1 = "pikachu.png";
+        let pokemon2 = "bulbasaur.png";
+        let pokemon3 = "charmander.png";
+        let pokemon4 = "squirtle.png";
+
+    let fragment1 = ""
+    
+    for (i=0;i<4;i++)
+        {
+            fragment1 = fragment1 + "<img class='pokemon' src ='" + pokemon1 + "' />"
+        }
+        console.log(fragment1);
+        document.getElementById("display-1").innerHTML = fragment1;
+
+
+        let fragment2 = "";
+        for (i=0;i<4;i++)
+            {
+                fragment2 = fragment2 + "<img class='pokemon' src ='" + pokemon1 + "' />";
+            }
+            fragment2 = fragment2 + "<br>";
+            for (i=0;i<4;i++)
+            {
+                fragment2 = fragment2 + "<img class='pokemon' src ='" + pokemon2 + "' />";
+            }
+            fragment2 = fragment2 + "<br>";
+            for (i=0;i<4;i++)
+            {
+                fragment2 = fragment2 + "<img class='pokemon' src ='" + pokemon3 + "' />";
+            }
+            fragment2 = fragment2 + "<br>";
+            for (i=0;i<4;i++)
+            {
+                fragment2 = fragment2 + "<img class='pokemon' src ='" + pokemon4 + "' />";
+            }
+        console.log(fragment2);
+        document.getElementById("display-2").innerHTML = fragment2;
+
+        
+        let fragment3 = "";
+
+        for (i=0;i<4;i++)
+        {
+            let x = 1 + Math.random() * 4; //產生1~5、不包含5的亂數(有小數點)
+			let y = Math.floor(x); //地板函式，用來去掉小數點
+            if (y==1)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon1 + "' />";
+            }
+            else if (y==2)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon2 + "' />";
+            }
+            else if (y==3)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon3 + "' />";
+            }
+            else if (y==4)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon4 + "' />";
+            }
+            
+        }    
+            fragment3 = fragment3 + "<br>";
+            for (i=0;i<4;i++)
+            {
+            let x = 1 + Math.random() * 4; //產生1~5、不包含5的亂數(有小數點)
+			let y = Math.floor(x); //地板函式，用來去掉小數點
+            if (y==1)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon1 + "' />";
+            }
+            else if (y==2)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon2 + "' />";
+            }
+            else if (y==3)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon3 + "' />";
+            }
+            else if (y==4)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon4 + "' />";
+            }
+            
+        }    
+            fragment3 = fragment3 + "<br>";
+            for (i=0;i<4;i++)
+        {
+            let x = 1 + Math.random() * 4; //產生1~5、不包含5的亂數(有小數點)
+			let y = Math.floor(x); //地板函式，用來去掉小數點
+            if (y==1)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon1 + "' />";
+            }
+            else if (y==2)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon2 + "' />";
+            }
+            else if (y==3)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon3 + "' />";
+            }
+            else if (y==4)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon4 + "' />";
+            }
+            
+        }    
+        fragment3 = fragment3 + "<br>";
+            for (i=0;i<4;i++)
+        {
+            let x = 1 + Math.random() * 4; //產生1~5、不包含5的亂數(有小數點)
+			let y = Math.floor(x); //地板函式，用來去掉小數點
+            if (y==1)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon1 + "' />";
+            }
+            else if (y==2)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon2 + "' />";
+            }
+            else if (y==3)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon3 + "' />";
+            }
+            else if (y==4)
+            {
+                fragment3 = fragment3 + "<img class='pokemon' src ='" + pokemon4 + "' />";
+            }
+            
+        }    
+            console.log(fragment3);
+            document.getElementById("display-3").innerHTML = fragment3;
+        
+        
+
+    </script>
+</body>
+
+</html>
